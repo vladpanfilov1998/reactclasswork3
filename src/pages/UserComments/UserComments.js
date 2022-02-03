@@ -1,5 +1,6 @@
 import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
+
 import {commentsService} from "../../services/comments.service";
 
 const UserComments = () => {

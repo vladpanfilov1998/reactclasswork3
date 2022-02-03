@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
+import {useParams} from "react-router-dom";
 
 import {postService} from "../../services/post.service";
-import {useParams} from "react-router-dom";
 import PostMapDetailsPage from "../PostMapDetailsPage/PostMapDetailsPage";
 
 const PostMapPage = () => {

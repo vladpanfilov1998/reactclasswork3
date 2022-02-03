@@ -1,13 +1,6 @@
-import React, {useEffect, useState} from 'react';
 import {Link} from "react-router-dom";
-import {albumService} from "../../services/album.service";
-import UserAlbumsPage from "../UserAlbumsDetailsPage/UserAlbumsDetailsPage";
-
 
 const UserDetailsPage = ({user: {id, name}}) => {
-
-
-
 
 
     return (

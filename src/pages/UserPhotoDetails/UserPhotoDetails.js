@@ -1,6 +1,4 @@
 import React from 'react';
-import {Link} from "react-router-dom";
-
 
 const UserPhotoDetails = ({photo: {id, albumId, title}}) => {
     return (
@@ -8,7 +6,6 @@ const UserPhotoDetails = ({photo: {id, albumId, title}}) => {
             <div>ID: {id}.</div>
             <div>ALBUM ID: {albumId}</div>
             <div>Title: {title}</div>
-
         </div>
     );
 };

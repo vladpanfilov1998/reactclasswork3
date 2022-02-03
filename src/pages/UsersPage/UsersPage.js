@@ -1,13 +1,10 @@
 import {useEffect, useState} from "react";
+import {Outlet} from "react-router-dom";
 
 import {userService} from "../../services/user.service";
 import {UserDetailsPage} from "../UserDetailsPage/UserDetailsPage";
-import {Outlet} from "react-router-dom";
+
 import css from "../../App.module.css";
-import UserAlbumsPage from "../UserAlbumsDetailsPage/UserAlbumsDetailsPage";
-import {albumService} from "../../services/album.service";
-
-
 
 const UsersPage = () => {
     const [users, setUsers] = useState([]);
@@ -15,8 +12,6 @@ const UsersPage = () => {
     useEffect(()=>{
         userService.getAll().then(value => setUsers([...value]));
     }, []);
-
-
 
     return (
         <div>

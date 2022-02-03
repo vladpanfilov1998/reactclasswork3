@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route, Outlet} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import {Layout} from "./components";
+import {PostsPage, UsersPage} from "./pages";
+import SingleUserPage from "./pages/SingleUserPage/SingleUserPage";
+import SinglePostPage from "./pages/SinglePostPage/SinglePostPage";
+import PostMapPage from "./pages/PostMapPage/PostMapPage";
+import CommentsMapPage from "./pages/CommentsMapPage/CommentsMapPage";
+import UserAlbumsPage from "./pages/UserAlbumsPage/UserAlbumsPage";
+import UserAlbumsDetailsPage from "./pages/UserAlbumsDetailsPage/UserAlbumsDetailsPage";
+
+const App = () => {
+    return (
+        <div>
+            <Routes>
+                <Route path={'/'} element={<Layout/>}>
+
+                    <Route path={'users'} element={<UsersPage/>}>
+                        <Route path={':id'} element={<SingleUserPage/>}>
+                            <Route path={'posts'} element={<PostMapPage/>}/>
+
+                        </Route>
+                        <Route path={'albums'} element={<UserAlbumsPage/>}/>
+                    </Route>
+
+                    <Route path={'posts'} element={<PostsPage/>}>
+                        <Route path={':id'} element={<SinglePostPage/>}>
+                            <Route path={'comments'} element={<CommentsMapPage/>}/>
+                        </Route>
+                    </Route>
+
+                </Route>
+
+            </Routes>
+            <Outlet/>
+
+        </div>
+    );
+};
 
 export default App;

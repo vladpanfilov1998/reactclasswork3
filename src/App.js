@@ -7,7 +7,7 @@ import SinglePostPage from "./pages/SinglePostPage/SinglePostPage";
 import PostMapPage from "./pages/PostMapPage/PostMapPage";
 import CommentsMapPage from "./pages/CommentsMapPage/CommentsMapPage";
 import UserAlbumsPage from "./pages/UserAlbumsPage/UserAlbumsPage";
-import UserAlbumsDetailsPage from "./pages/UserAlbumsDetailsPage/UserAlbumsDetailsPage";
+import UserPhotoPage from "./pages/UserPhotoPage/UserPhotoPage";
 
 const App = () => {
     return (
@@ -20,8 +20,13 @@ const App = () => {
                             <Route path={'posts'} element={<PostMapPage/>}/>
 
                         </Route>
-                        <Route path={'albums'} element={<UserAlbumsPage/>}/>
+                        <Route path={':id/albums'} element={<UserAlbumsPage/>}/>
+                        <Route path={'photos'} element={<UserPhotoPage/>}/>
+
+
                     </Route>
+
+
 
                     <Route path={'posts'} element={<PostsPage/>}>
                         <Route path={':id'} element={<SinglePostPage/>}>

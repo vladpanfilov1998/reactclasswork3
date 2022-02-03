@@ -13,7 +13,9 @@ const UserAlbumsPage = () => {
 
     return (
         <div>
-            {albums.map(album => <UserAlbumsDetailsPage key={album.id} album={album}/>)}
+            {albums &&
+            (albums.map(album => <UserAlbumsDetailsPage key={album.id} album={album}/>))
+            }
         </div>
 
     );

@@ -8,7 +8,7 @@ const UserAlbumsDetailsPage = ({album: {id, userId, title}}) => {
             <div>ID: {id}.</div>
             <div>USER ID: {userId}</div>
             <div>Title: {title}</div>
-            <Link to={id.toString()}>
+            <Link to={`${userId.toString()}/photos`}>
                 <button>PHOTO</button>
             </Link>
         </div>
@@ -16,4 +16,3 @@ const UserAlbumsDetailsPage = ({album: {id, userId, title}}) => {
 };
 
 export default UserAlbumsDetailsPage;
-

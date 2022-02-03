@@ -17,7 +17,7 @@ const UserDetailsPage = ({user: {id, name}}) => {
             <Link to={id.toString()}>
                 <button>USER DETAILS</button>
             </Link>
-            <Link to={'albums'}>
+            <Link to={`${id.toString()}/albums`}>
                 <button>USER ALBUMS</button>
             </Link>
         </div>

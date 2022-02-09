@@ -6,6 +6,7 @@ const UserPhotoDetails = ({photo: {id, albumId, title}}) => {
             <div>ID: {id}.</div>
             <div>ALBUM ID: {albumId}</div>
             <div>Title: {title}</div>
+
         </div>
     );
 };

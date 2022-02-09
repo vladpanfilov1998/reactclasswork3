@@ -1,9 +1,11 @@
 import {Link} from "react-router-dom";
+import React from "react";
 
 const UserDetailsPage = ({user: {id, name}}) => {
 
 
     return (
+
         <div>
             <div>ID: {id}.</div>
             <div>NAME: {name}</div>
@@ -14,6 +16,7 @@ const UserDetailsPage = ({user: {id, name}}) => {
                 <button>USER ALBUMS</button>
             </Link>
         </div>
+
     );
 };
 

@@ -13,19 +13,20 @@ const App = () => {
     return (
         <div>
             <Routes>
+
+
                 <Route path={'/'} element={<Layout/>}>
 
                     <Route path={'users'} element={<UsersPage/>}>
                         <Route path={':id'} element={<SingleUserPage/>}>
                             <Route path={'posts'} element={<PostMapPage/>}/>
-
                         </Route>
                         <Route path={':id/albums'} element={<UserAlbumsPage/>}/>
-                        <Route path={'photos'} element={<UserPhotoPage/>}/>
-
 
                     </Route>
 
+
+                    <Route index path={'/photos/:userId'} element={<UserPhotoPage/>}/>
 
 
                     <Route path={'posts'} element={<PostsPage/>}>

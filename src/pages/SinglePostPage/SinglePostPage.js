@@ -26,6 +26,7 @@ const SinglePostPage = () => {
             <div className={css.outlet}>
                 <Outlet/>
             </div>
+
         </div>
 
     );

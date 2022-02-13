@@ -40,7 +40,6 @@ const SingleUserPage = () => {
                 <Outlet/>
             </div>
         </div>
-
     );
 };
 

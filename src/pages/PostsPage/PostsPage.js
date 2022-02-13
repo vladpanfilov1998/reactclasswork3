@@ -20,7 +20,6 @@ const PostsPage = () => {
                 <Outlet/>
             </div>
         </div>
-
     );
 };
 

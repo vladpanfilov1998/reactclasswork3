@@ -3,7 +3,6 @@ import React from "react";
 
 const UserDetailsPage = ({user: {id, name}}) => {
 
-
     return (
 
         <div>

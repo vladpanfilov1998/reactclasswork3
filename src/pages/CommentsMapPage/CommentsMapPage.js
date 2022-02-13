@@ -15,7 +15,6 @@ const CommentsMapPage = () => {
         <div>
             {comments.map(comment => <CommentsMapDetailsPage key={comment.id} comment={comment}/>)}
         </div>
-
     );
 };
 

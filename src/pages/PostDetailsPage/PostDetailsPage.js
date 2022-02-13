@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-
 const PostDetailsPage = ({ post: { id, title } }) => {
     return (
         <div>
@@ -10,7 +9,6 @@ const PostDetailsPage = ({ post: { id, title } }) => {
                 <button>POST DETAILS</button>
             </Link>
         </div>
-
     );
 };
 

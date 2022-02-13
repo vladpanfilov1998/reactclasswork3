@@ -21,12 +21,14 @@ const App = () => {
                         <Route path={':id'} element={<SingleUserPage/>}>
                             <Route path={'posts'} element={<PostMapPage/>}/>
                         </Route>
-                        <Route path={':id/albums'} element={<UserAlbumsPage/>}/>
+                        <Route path={':id/albums'} element={<UserAlbumsPage/>}>
+
+                            <Route index path={'/users/:id/albums/photos'} element={<UserPhotoPage/>}/>
+                        </Route>
 
                     </Route>
 
 
-                    <Route index path={'/photos/:userId'} element={<UserPhotoPage/>}/>
 
 
                     <Route path={'posts'} element={<PostsPage/>}>

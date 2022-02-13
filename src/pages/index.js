@@ -12,3 +12,4 @@ export * from './UserAlbumsPage/UserAlbumsPage';
 export * from './UserAlbumsDetailsPage/UserAlbumsDetailsPage';
 export * from './UserPhotoPage/UserPhotoPage';
 export * from './UserPhotoDetails/UserPhotoDetails';
+export * from './UserComments/UserComments';

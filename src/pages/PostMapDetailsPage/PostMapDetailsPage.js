@@ -9,7 +9,6 @@ const PostMapDetailsPage = ({ post: { id, title, body, userId } }) => {
             </div>
             <br />
         </div>
-
     );
 };
 

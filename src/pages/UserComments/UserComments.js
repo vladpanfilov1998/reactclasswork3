@@ -21,7 +21,6 @@ const UserComments = () => {
                 </div>
             )}
         </div>
-
     );
 };
 

@@ -15,7 +15,6 @@ const PostMapPage = () => {
         <div>
             {userPosts.map(post => <PostMapDetailsPage key={post.id} post={post}/>)}
         </div>
-
     );
 };
 
